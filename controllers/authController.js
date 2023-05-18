@@ -1,9 +1,9 @@
-const User = require('../models/user')
+const User = require('/models/user')
 
-const catchAsyncErrors = require('../middlewares/catchAsyncErrors')
-const ErrorHandler = require('../utils/errorHandler')
-const sendToken = require('../utils/jwtToken')
-const sendEmail = require('../utils/sendEmail')
+const catchAsyncErrors = require('/middlewares/catchAsyncErrors')
+const ErrorHandler = require('/utils/errorHandler')
+const sendToken = require('/utils/jwtToken')
+const sendEmail = require('/utils/sendEmail')
 
 const crypto = require('crypto')
 const cloudinary = require('cloudinary')

@@ -14,9 +14,9 @@ const {
     getUserDetails,
     updateUser,
     deleteUser
-} = require('../controllers/authController')
+} = require('/controllers/authController')
 
-const { isAuthenticatedUser, authorizeRoles } = require('../middlewares/auth')
+const { isAuthenticatedUser, authorizeRoles } = require('/middlewares/auth')
 
 router.route('/register').post(registerUser)
 router.route('/login').post(loginUser)

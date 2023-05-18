@@ -8,9 +8,9 @@ const {
     allOrders,
     updateOrder,
     deleteOrder
-} = require('../controllers/orderController')
+} = require('/controllers/orderController')
 
-const { isAuthenticatedUser, authorizeRoles } = require('../middlewares/auth')
+const { isAuthenticatedUser, authorizeRoles } = require('/middlewares/auth')
 
 router.route('/order/new').post(isAuthenticatedUser, newOrder)
 router.route('/order/:id').get(isAuthenticatedUser, getSingleOrder)
